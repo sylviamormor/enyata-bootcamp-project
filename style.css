@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+  background-color: #f63232;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+
+.heading h1{
+  color: white;
+  display: inline-block;
+  border: 8px solid white;
+  border-radius: 36px;
+  padding: 6px 12px;
+
+}
+
+bannerSpace{
+position:relative
+
+}
+
+.banner1{
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+.banner1 h2{
+  font-size: 40px;
+}
+
+.welcome{
+  position: absolute;
+  top: 40%;
+  left: 0;
+  background-color: #f63232;
+  color: white;
+  padding: 0px;
+
+
+}
+
+.welcome h2{ 
+font-size: 40px;
+}
+
+
+
+.navigator ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: sticky;
+  background-color: #f4f4f4;
+}
+ 
+
+
+
+.navigator  ul li{
+ list-style-type: none;
+ font-size: 24px;
+ width: 25%;
+ display: inline-block;
+
+ 
+
+}
+ 
+.navigator ul li a{
+  text-decoration: none;
+  color: #4b4b4b;
+}
+  
+.navigator li a.signUp{
+  color: #f63232;
+}
+
+.mainPage{
+  max-width: 100%;
+  margin: 80px 10px;
+}
+
+article h2{
+  color: #f63232;
+  font-size: 48px;
+  text-align: center;
+}
+
+article p{
+  line-height: 25px;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto 0;
+}
+
+article p::first-line{
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+
+
+.gameImages{
+  display:flex;
+  margin: 10px;
+  text-align:justify;
+
+}
+
+.gameImages li{
+  display: inline-flex
+  width: 5px;
+  margin: 10px 5%;
+  
+}
+
+.gameimages li img{
+  max-width: 100%;
+}
+
+.error{
+  color: red;
+  display: none;
+}
+
+
+.joinUs{
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4b4b4b;
+}
+
+.joinUs h2{
+  font-size: 36px;
+}
+
+
+.joinUs p{
+  margin-top: 10px;
+}
+
+
+.joinUs form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.submitButton{
+  background-color: #f63232;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  color: #f4f4f4;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+form input{
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 4px solid white;
+  border-radius: 28px;
+}
+
+
+footer{
+  background-color: #f63232 ;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+ 
+banner h2 span{
+  font-size: 1.2em;
+}
+
+p::selection{
+  background-color: red;
+  color: black;
+}
+
+@media screen and (max-width: 500px) 
+  
+  body{
+      width: 100%;
+  }
+ .heading{
+      position: fixed;
+  }
+  .bannerSpace{
+      position: static;
+  }
+  .navigator{
+      position: fixed;
+  }
+  .navigator li{
+      display: block;
+      font-size: large;
+  }
+   .welcome{
+      position: static;
+      text-align: center;
+      background-color: #f63232;
+      color: white;
+      padding: 10px;
+      width: 100%;
+  }
+  .welcome br{
+      display: none;
+  }
+  .banner h2{
+      font-size: 20px;
+  }
+  
+  
+  
+  .gameImages{
+       margin: 10px; 
+      text-align: center;
+      margin: 0px;
+  }
+  .gameImages li{
+      display: block;
+      margin: 0;
+      width: 100%;
+  }
+  .gameImages li img{
+      max-width: 80%;
+  }
+  .mainPage{
+      margin: 50px 20px;
+  }
+  .join form {
+      width: 310px;
+      margin: 0 auto;
+
+      
+}
+
+
+
+
+
+ 
