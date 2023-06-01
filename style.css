@@ -5,7 +5,6 @@
 
 }
 
-
 body{
   font-family: 'Poppins', sans-serif;
 }
@@ -13,14 +12,11 @@ body{
 .heading{
   background-color: #f63232;
   width: 100%;
-  margin: 0 auto;
   padding: 20px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   position: fixed;
+  z-index: 1;
 }
-
 
 .heading h1{
   color: white;
@@ -28,24 +24,18 @@ body{
   border: 8px solid white;
   border-radius: 36px;
   padding: 6px 12px;
-
 }
 
-bannerSpace{
-position:relative
-
+.bannerSpace{
+  position:relative
+  
 }
-
+  
 .banner1{
   width: 100%;
   max-width: 100%;
 }
 
-
-
-.banner1 h2{
-  font-size: 40px;
-}
 
 .welcome{
   position: absolute;
@@ -53,49 +43,52 @@ position:relative
   left: 0;
   background-color: #f63232;
   color: white;
-  padding: 0px;
-
-
+  padding: 30px;
 }
 
 .welcome h2{ 
-font-size: 40px;
+  font-size: 40px;
 }
 
-
+.welcome span{
+  font-size: 1.2em;
+}
+  
+.navigator{
+  background-color: #f4f4f4;
+  padding: 24px;
+  position:sticky;
+  top: 100px;
+}  
 
 .navigator ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  position: sticky;
-  background-color: #f4f4f4;
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
- 
 
 
+.navigator li{
+display: inline-block;
+font-size: 24px;
+width: 25%;
+} 
 
-.navigator  ul li{
- list-style-type: none;
- font-size: 24px;
- width: 25%;
- display: inline-block;
-
- 
-
-}
- 
 .navigator ul li a{
   text-decoration: none;
   color: #4b4b4b;
 }
-  
+
+.navigator li:hover{
+  text-decoration: underline;
+}
+
 .navigator li a.signUp{
   color: #f63232;
 }
 
-.mainPage{
+
+main{
   max-width: 100%;
   margin: 80px 10px;
 }
@@ -118,24 +111,21 @@ article p::first-line{
   font-size: 20px;
 
 }
-
-
-
-.gameImages{
-  display:flex;
+.game-images{
   margin: 10px;
-  text-align:justify;
+  text-align: center;
 
 }
 
-.gameImages li{
-  display: inline-flex
-  width: 5px;
-  margin: 10px 5%;
-  
+
+.game-images li {
+  display: inline-block;
+  width: 20%;
+  margin: 60px 5%
 }
 
-.gameimages li img{
+
+.game-images li img{
   max-width: 100%;
 }
 
@@ -160,7 +150,6 @@ article p::first-line{
 .joinUs p{
   margin-top: 10px;
 }
-
 
 .joinUs form {
   display: flex;
@@ -207,66 +196,69 @@ p::selection{
   color: black;
 }
 
-@media screen and (max-width: 500px) 
-  
-  body{
-      width: 100%;
-  }
- .heading{
-      position: fixed;
-  }
-  .bannerSpace{
-      position: static;
-  }
-  .navigator{
-      position: fixed;
-  }
-  .navigator li{
-      display: block;
-      font-size: large;
-  }
-   .welcome{
-      position: static;
-      text-align: center;
-      background-color: #f63232;
-      color: white;
-      padding: 10px;
-      width: 100%;
-  }
-  .welcome br{
-      display: none;
-  }
-  .banner h2{
-      font-size: 20px;
-  }
-  
-  
-  
-  .gameImages{
-       margin: 10px; 
-      text-align: center;
-      margin: 0px;
-  }
-  .gameImages li{
-      display: block;
-      margin: 0;
-      width: 100%;
-  }
-  .gameImages li img{
-      max-width: 80%;
-  }
-  .mainPage{
-      margin: 50px 20px;
-  }
-  .join form {
-      width: 310px;
-      margin: 0 auto;
 
-      
+@media only screen and (max-width:600px){
+  .body{
+    width: 100%;
+}
+.heading, .bannerSpace{
+    position: static;
+}
+
+.navigator{
+position: static;
+
+}
+
+.navigator li{
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+
+.welcome br{
+  display: none;
+}
+
+.welcome{
+    position: static;
+    text-align: center;
+    background-color: #f63232;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.bannerSpace h2{
+    font-size: 20px;
+}
+
+.bannerSpace h2 span{
+    font-size: 1.2em;
 }
 
 
+.game-images{
+  text-align: center;
+  margin: 0px;
+}
 
+.game-images li{
+  display: block;
+  margin: 0;
+  width: 100%;
+}
 
+.game-images li img{
+  max-width: 80%;
+}
 
- 
+main{
+  margin: 50px 20px;
+} 
+
+.joinUs form{
+  width: 310px;
+  margin: 0 auto;
+}
+}
